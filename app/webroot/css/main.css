@@ -1,0 +1,198 @@
+.centralizar {
+	margin-left: auto;
+	margin-right: auto;
+}
+#banner {
+	background-color: #2799e3;
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+}
+
+/* ###########   Cabeçalho   ###########*/
+
+.foto-user {
+	margin-top: -75px;
+	padding: 16.5;
+	border-radius: 100px;
+	background-color: #4c1353;
+}
+.foto {
+	padding: 0px;
+	margin-top: -85px;
+	margin-bottom: -75px;
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	background-color: #4c1353;
+	border: solid 16.5px #4c1353;
+}
+/*LOGO REDUZIDO PARA O RESPONSIVO*/
+.logo-menor {
+	width: 90px;
+	margin-top: -34px;
+	border: solid 5px #4c1353;
+	background-color: #4c1353;
+	border-radius: 90px;
+	margin-left: 15px;
+}
+
+.navbar-collapse{
+
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-top: none;
+
+}
+
+.navbar-default .navbar-toggle {
+	margin-right: 20px;
+}
+/* ##### Estilização do botão de expandir menu para telas menores*/
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #A46EB3;
+}
+.navbar-default .navbar-toggle {
+  border-color: #6B1E74;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: #36213C;
+}
+/*#####*/
+
+/*#####Estilização do dropdown do menu*/
+.dropdown-menu {
+  background-color: #36213C;
+  border-top-color: #A46EB3;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #555;
+  background-color: #36213C;
+}
+.dropdown-menu>li>a:hover {  
+  background-color: rgb(40, 24, 45);
+}
+/*######*/
+
+.menu-principal {
+	border: none;
+	border-radius: 0px;
+
+}
+.menu-principal li {
+	margin-left: 10px;
+	color: #2799e3 !important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+.menu-principal a:link, a:visited, a:hover, a:active {
+	color: #2799e3 !important;
+	text-decoration: none;
+}
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+nav.menu-principal {
+	background-color: #1e1e1e;
+}
+
+/* ###########   Fim-Cabeçalho   ###########*/
+
+@media (max-width: 480px) {
+	.titulo {
+		font-size: 23px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+	.titulo {
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+	.titulo {
+		text-align: right;
+		font-size: 44px;
+		color: #4c1353;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+.titulo {
+	text-align: right;
+	color: #4c1353;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid, .navbar-right {
+	padding: 0px !important;
+}
+hr.separador {
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.24) 50%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.36) 61%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(0, 0, 0, 0)), color-stop(29%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.24)), color-stop(60%, rgba(0, 0, 0, 0.35)), color-stop(61%, rgba(0, 0, 0, 0.36)), color-stop(100%, rgba(0, 0, 0, 0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.24) 50%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.36) 61%, rgba(0, 0, 0, 0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.24) 50%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.36) 61%, rgba(0, 0, 0, 0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.24) 50%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.36) 61%, rgba(0, 0, 0, 0.65) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.24) 50%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.36) 61%, rgba(0, 0, 0, 0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1); /* IE6-9 */
+	height: 4px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+
+
+/* ###########   Footer   ###########*/
+
+#rodape {
+	background-color: #1e1e1e !important;
+	color: white;
+}
+.rodape {
+	padding-top: 5px;
+	background-color: inherit;
+}
+.rodape-titulo {
+	color: #2580bc;
+	font-weight: bold;
+}
+.rodape-corpo {
+}
+.rodape-icone{
+	display: inline;
+	position: relative;
+	width: 25px;
+	height: 25px;
+	float: left;
+	top: 5px;
+	margin-right: 5px;
+}
+
+
+/* ###########   Fim-Footer   ###########*/
+
+.letra{
+
+	
+	background-color: #1e1e1e;
+	color: #2799E3;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+}

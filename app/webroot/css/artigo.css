@@ -1,0 +1,18 @@
+/*Não deixar imagem colada ao texto*/
+.imagem{
+
+	padding: 20px;
+}
+
+.corpo-artigo {
+	font-size: 18px;
+	text-indent: 10%;
+	text-align: justify;
+}
+
+.imagem-esquerda{
+	float: left;
+}
+.imagem-direita{
+	float: right;
+}

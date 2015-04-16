@@ -1,0 +1,72 @@
+/* ###########   Artigo   ###########*/
+
+.titulo-artigo {
+	color: #2799e3;
+	font-weight: bolder;
+	font-size: 32px;
+	font-family: 'Roboto', sans-serif;
+}
+.divisor-artigo {
+	height: 2px;
+	background-color: #777;
+	margin: 5px;
+}
+.corpo-artigo {
+	font-size: 18px;
+	text-indent: 10%;
+	text-align: justify;
+}
+.rodape-artigo {
+	color: #0a2c42;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Media query para ajustar o alinhamento dos artigos da página principal em telas menores*/
+@media (max-width: 1200px) {
+	h3.esquerda {
+		text-align: center !important;
+	}
+	p.esquerda {
+		text-align: right !important;
+	}
+}
+
+.esquerda {
+	text-align: left;
+}
+
+/* Media query para ajustar o alinhamento dos artigos da página principal em telas menores*/
+@media (max-width: 1200px) {
+	h3.direita {
+		text-align: center !important;
+	}
+	p.direita {
+		text-align: right !important;
+	}
+}
+.direita {
+	text-align: right;
+}
+
+.artigo {
+	margin-bottom: 20px;
+}
+
+/* ###########   Fim-Artigo   ###########*/
+
+/* === IMAGENS */
+.case-img {
+}
+.case-img img {
+	width: 450px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	border: 8px solid #fff;
+	-ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+    transform: rotate(5deg);
+}
+/* === IMAGENS */

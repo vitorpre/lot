@@ -1,0 +1,19 @@
+.menu-campeao{
+
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	left: -30px;
+	position: relative;
+	font-size: 18px;
+	font-family: 'Merriweather', serif;
+	margin-bottom: 5px;
+
+}
+
+hr{
+
+	background-color: #666;
+	height: 1px;
+	width: 100%;
+}
