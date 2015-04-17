@@ -74,8 +74,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="todos-artigos.html">Todos Artigos</a></li>                           
+						<li><?php echo $this->Html->link('Home', array('controller' => 'Pages', 'action' => 'display') ); ?></li>
+						<li><?php echo $this->Html->link('Todos Artigos', array('controller' => 'Artigos', 'action' => 'index') ); ?></li>                           
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Estratégias <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">

@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `artigos`
 --
-
+use lot;
 CREATE TABLE IF NOT EXISTS `artigos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `data` datetime NOT NULL,
