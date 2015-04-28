@@ -60,13 +60,16 @@
 }
 .case-img img {
 	width: 450px;
-	margin: 0 auto;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	border: 8px solid #fff;
-	-ms-transform: rotate(5deg); /* IE 9 */
-    -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
-    transform: rotate(5deg);
+	-ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
 }
 /* === IMAGENS */

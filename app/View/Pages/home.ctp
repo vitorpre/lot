@@ -1,3 +1,4 @@
+
 <section class="row col-lg-10 col-lg-offset-1">
 	<h2 class="col-lg-12 titulo" >Últimos Adicionados</h2>
 	<hr class="separador">

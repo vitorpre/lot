@@ -1,14 +1,17 @@
 <div class="artigos form">
-<?php echo $this->Form->create('Artigo'); ?>
+<?php echo $this->Form->create('Artigo', array('enctype'=>'multipart/form-data')); ?>
 	<fieldset>
 		<legend><?php echo __('Add Artigo'); ?></legend>
 	<?php
 		echo $this->Form->input('data');
-		echo $this->Form->input('imagem_capa');
 		echo $this->Form->input('usuario_id');
 		echo $this->Form->input('categoria_id');
 		echo $this->Form->input('Champion');
 		echo $this->Form->input('Item');
+		echo $this->Form->input('upload', array('type'=>'file'));
+
+		echo $this->Form->input('Conteudo.0.titulo');;
+		echo $this->Form->input('Conteudo.0.conteudo');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
@@ -28,5 +31,6 @@
 		<li><?php echo $this->Html->link(__('New Champion'), array('controller' => 'champions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Items'), array('controller' => 'items', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Item'), array('controller' => 'items', 'action' => 'add')); ?> </li>
+
 	</ul>
 </div>

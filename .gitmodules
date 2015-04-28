@@ -1,0 +1,9 @@
+[submodule "app/plugins/gdata"]
+	path = app/plugins/gdata
+	url = https://github.com/neilcrookes/CakePHP-GData-Plugin.git
+[submodule "app/Plugin/gdata"]
+	path = app/Plugin/gdata
+	url = https://github.com/neilcrookes/CakePHP-GData-Plugin.git
+[submodule "app/Plugin/rest"]
+	path = app/Plugin/rest
+	url = https://github.com/neilcrookes/CakePHP-ReST-DataSource-Plugin
