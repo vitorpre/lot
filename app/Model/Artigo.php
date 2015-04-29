@@ -68,7 +68,7 @@ class Artigo extends AppModel {
  */
 	public $belongsTo = array(
 		'Usuario' => array(
-			'className' => 'Usuario',
+			'className' => 'User',
 			'foreignKey' => 'usuario_id',
 			'conditions' => '',
 			'fields' => '',

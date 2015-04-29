@@ -88,7 +88,7 @@ public function add() {
         }
 
         $usuarios = $this->Artigo->Usuario->find('list',array(
-        	'fields' => array('Usuario.id','Usuario.login')
+        	'fields' => array('Usuario.id','Usuario.username')
         	));
         $categorias = $this->Artigo->Categoria->find('list',array(
         	'fields' => array('Categoria.id','Categoria.nome')

@@ -64,7 +64,7 @@ class Infadicional extends AppModel {
  */
 	public $hasMany = array(
 		'Usuario' => array(
-			'className' => 'Usuario',
+			'className' => 'User',
 			'foreignKey' => 'infadicional_id',
 			'dependent' => false,
 			'conditions' => '',
