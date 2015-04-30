@@ -1,8 +1,47 @@
+<?php 
+
+	debug($artigos);
+	$path = str_replace("\\", "/", IMAGES) . "artigos/";
+
+?>
+
 
 <section class="row col-lg-10 col-lg-offset-1">
 	<h2 class="col-lg-12 titulo" >Últimos Adicionados</h2>
 	<hr class="separador">
 </section>
+
+
+<!-- Teste com o php -->
+
+
+ <section class="row col-lg-10 col-lg-offset-1 artigo">
+	<div class="col-lg-6 col-md-12 col-lg-push-6 col-sm-12 case-img">
+		<?php echo $this->Html->image('artigos/' . $artigos[0]['Artigo']['id'] . '/' . $artigos[0]['Artigo']['imagem_capa'], array('alt' => 'League of Tactics', 'class' => 'img-responsive centralizar')); ?>
+	</div>
+	<article class="col-lg-6 col-md-12 col-lg-pull-6 col-sm-12">
+		<h3 class="titulo-artigo esquerda"><?php echo $artigos[0]['Conteudo'][0]['titulo'] ?></h3>
+		<hr class="divisor-artigo">
+		<div>
+			<h5 class="col-lg-6 col-md-6 col-xs-6 col-sm-12 usuario"><?php echo $artigos[0]['Usuario']['username'] ?></h5>
+			<h5 class="col-lg-6 col-md-6 col-xs-6 col-sm-12 text-right data"><?php echo $artigos[0]['Artigo']['data'] ?></h5>
+		</div>
+		<p class="corpo-artigo ">
+			<?php echo $artigos[0]['Conteudo'][0]['resumo'] ?>
+		</p>
+		<p class="rodape-artigo direita"><a href="artigo.html">Leia Mais</a></p>
+	</article>
+</section>
+
+<!-- Fim teste -->
+
+
+
+
+
+
+
+
 <section class="row col-lg-10 col-lg-offset-1 artigo">
 	<div class="col-lg-6 col-md-12 col-lg-push-6 col-sm-12 case-img">
 		<?php echo $this->Html->image('artigo1.jpg', array('alt' => 'League of Tactics', 'class' => 'img-responsive centralizar')); ?>
@@ -20,6 +59,7 @@
 		<p class="rodape-artigo direita"><a href="artigo.html">Leia Mais</a></p>
 	</article>
 </section>
+
 <section class="row col-lg-10 col-lg-offset-1 artigo">
 
 	<div class="col-lg-6 col-md-12 col-sm-12 case-img">

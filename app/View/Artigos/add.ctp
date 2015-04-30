@@ -3,8 +3,6 @@
 	<fieldset>
 		<legend><?php echo __('Add Artigo'); ?></legend>
 		<?php
-		echo $this->Form->input('data');
-		echo $this->Form->input('usuario_id');
 		echo $this->Form->input('categoria_id');
 		echo $this->Form->input('Champion');
 		echo $this->Form->input('Item');

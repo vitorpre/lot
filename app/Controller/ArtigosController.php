@@ -58,6 +58,8 @@ public function add() {
 
 	if ($this->request->is('post')) {
 		$this->Artigo->create($this->request->data);
+		$this->Artigo->data['Artigo']['usuario_id'] = AuthComponent::user('id');
+		$this->Artigo->data['Artigo']['data'] = date('Y-m-d H:i:s');
 		$this->Artigo->data['Artigo']['imagem_capa'] = $this->data['Artigo']['upload']['name'];
 		if ($this->Artigo->saveAll()) {
 			$file = $this->data['Artigo']['upload']; //put the data into a var for easy use
@@ -87,9 +89,7 @@ public function add() {
 
         }
 
-        $usuarios = $this->Artigo->Usuario->find('list',array(
-        	'fields' => array('Usuario.id','Usuario.username')
-        	));
+       
         $categorias = $this->Artigo->Categoria->find('list',array(
         	'fields' => array('Categoria.id','Categoria.nome')
         	));

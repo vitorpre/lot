@@ -98,6 +98,9 @@ Configure::write('Dispatcher.filters', array(
 	'CacheDispatcher'
 ));
 
+date_default_timezone_set('America/Sao_Paulo');
+ini_set('date.timezone', 'America/Sao_Paulo');
+
 /**
  * Configures default file logging options
  */
