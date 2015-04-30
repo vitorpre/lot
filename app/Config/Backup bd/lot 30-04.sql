@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 30-Abr-2015 às 22:58
+-- Generation Time: 16-Abr-2015 às 22:47
 -- Versão do servidor: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `artigos`
 --
-
+use lot;
 CREATE TABLE IF NOT EXISTS `artigos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `data` datetime NOT NULL,
@@ -33,14 +33,7 @@ CREATE TABLE IF NOT EXISTS `artigos` (
   `usuario_id` int(10) unsigned NOT NULL,
   `categoria_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `artigos`
---
-
-INSERT INTO `artigos` (`id`, `data`, `imagem_capa`, `usuario_id`, `categoria_id`) VALUES
-(1, '2015-04-30 16:53:53', 'article_post_width_Quinn.jpg', 1, 1);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -53,15 +46,7 @@ CREATE TABLE IF NOT EXISTS `artigos_champions` (
   `artigo_id` int(10) unsigned NOT NULL,
   `champion_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Extraindo dados da tabela `artigos_champions`
---
-
-INSERT INTO `artigos_champions` (`id`, `artigo_id`, `champion_id`) VALUES
-(1, 1, 2),
-(2, 1, 3);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -88,14 +73,7 @@ CREATE TABLE IF NOT EXISTS `categorias` (
   `descricao` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `nome` (`nome`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `categorias`
---
-
-INSERT INTO `categorias` (`id`, `nome`, `descricao`) VALUES
-(1, 'Notícia', 'Nova notícia');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -109,16 +87,14 @@ CREATE TABLE IF NOT EXISTS `champions` (
   `foto` varchar(150) CHARACTER SET utf8 DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `nome` (`nome`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Extraindo dados da tabela `champions`
 --
 
 INSERT INTO `champions` (`id`, `nome`, `foto`) VALUES
-(1, 'Zed', ''),
-(2, 'Bardo', ''),
-(3, 'Lux', '');
+(1, 'Zed', '');
 
 -- --------------------------------------------------------
 
@@ -129,18 +105,10 @@ INSERT INTO `champions` (`id`, `nome`, `foto`) VALUES
 CREATE TABLE IF NOT EXISTS `conteudos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `titulo` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `resumo` varchar(200) CHARACTER SET utf8 NOT NULL,
   `conteudo` text CHARACTER SET utf8 NOT NULL,
   `artigo_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `conteudos`
---
-
-INSERT INTO `conteudos` (`id`, `titulo`, `resumo`, `conteudo`, `artigo_id`) VALUES
-(1, 'Mantra', 'Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. ', 'Where is you at? Where is you at? Where is you at? Woooooww... WOMBO COMBO!!', 1);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -172,35 +140,6 @@ CREATE TABLE IF NOT EXISTS `items` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `nome` (`nome`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `users`
---
-
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `role` varchar(20) DEFAULT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
-  `usuario_lol` varchar(50) DEFAULT NULL,
-  `liga` int(2) DEFAULT NULL,
-  `divisao` int(2) DEFAULT NULL,
-  `foto` varchar(200) DEFAULT NULL,
-  `fl_permite_divulgar` tinyint(1) DEFAULT NULL,
-  `infadicional_id` int(10) unsigned DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `role`, `created`, `modified`, `usuario_lol`, `liga`, `divisao`, `foto`, `fl_permite_divulgar`, `infadicional_id`) VALUES
-(1, 'admin', '2ac478f8201e0240ab34f7015ebec93e5aac9b11', 'admin', '2015-04-29 22:50:57', '2015-04-29 22:50:57', '', NULL, NULL, '', 0, NULL);
 
 -- --------------------------------------------------------
 
